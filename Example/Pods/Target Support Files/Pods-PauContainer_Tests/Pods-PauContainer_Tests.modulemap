@@ -1,0 +1,6 @@
+framework module Pods_PauContainer_Tests {
+  umbrella header "Pods-PauContainer_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - PauContainer (0.1.0)
+
+DEPENDENCIES:
+  - PauContainer (from `../`)
+
+EXTERNAL SOURCES:
+  PauContainer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PauContainer: e3df0888abeb99352e6c57102b344af7f33e112c
+
+PODFILE CHECKSUM: ece02cec3828c61849529a4883bd97f79939e813
+
+COCOAPODS: 1.8.4

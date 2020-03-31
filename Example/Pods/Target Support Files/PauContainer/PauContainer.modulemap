@@ -1,0 +1,6 @@
+framework module PauContainer {
+  umbrella header "PauContainer-umbrella.h"
+
+  export *
+  module * { export * }
+}
