@@ -10,12 +10,14 @@
 		016B30DEFFAA9ABCF910E7CBAD9C9E57 /* Pods-PauContainer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F816809D0609E5BEA3EF5C18EC777CB /* Pods-PauContainer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C9A20E5120A75E0760F3127042160C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		58EEECBF41432E07E2A7C02D9A20569B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		5F1E32F4243480150026C390 /* DefinitionKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1E32F3243480150026C390 /* DefinitionKey.swift */; };
+		5F1E32FC243601590026C390 /* Definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1E32FB243601580026C390 /* Definition.swift */; };
 		7381EDDAD483A27622A3FF144DFE877B /* PauContainer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 099774A3E09CC9B28406B8A77556E3D3 /* PauContainer-dummy.m */; };
 		958D679FDF20CD8814CB7D7881401DC3 /* PauContainer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8512E3C56680AACA17F0C2F90518FE7B /* PauContainer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6EE6D305BEF2B64EB9FD8089B49FB97 /* Pods-PauContainer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D1290D46B09668F25F948CA1C322A50 /* Pods-PauContainer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A73BE974477712FC88AFF24E52C8B0F7 /* Pods-PauContainer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF9258D30D77F05D21D59565CCB1A3D /* Pods-PauContainer_Example-dummy.m */; };
 		BF7D5211ABCAE75C5F96C36E11E8A893 /* Pods-PauContainer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 094DA338586CDF8301AAC9B0018273F9 /* Pods-PauContainer_Tests-dummy.m */; };
-		D2356736F99E160E1AA97EAF1F0C33B8 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0331F7FF0980658D544013345680F84F /* ReplaceMe.swift */; };
+		D2356736F99E160E1AA97EAF1F0C33B8 /* PauContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0331F7FF0980658D544013345680F84F /* PauContainer.swift */; };
 		DB846908D407D3AEC1AD7FFBB2918A1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +40,7 @@
 
 /* Begin PBXFileReference section */
 		00E961FF19E7891F3801DCA60FB3896B /* Pods-PauContainer_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PauContainer_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0331F7FF0980658D544013345680F84F /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = PauContainer/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		0331F7FF0980658D544013345680F84F /* PauContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PauContainer.swift; path = PauContainer/Classes/PauContainer.swift; sourceTree = "<group>"; };
 		0844809EBBA3DEAFD70BB8D3F13ED758 /* PauContainer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PauContainer-Info.plist"; sourceTree = "<group>"; };
 		094DA338586CDF8301AAC9B0018273F9 /* Pods-PauContainer_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PauContainer_Tests-dummy.m"; sourceTree = "<group>"; };
 		099774A3E09CC9B28406B8A77556E3D3 /* PauContainer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PauContainer-dummy.m"; sourceTree = "<group>"; };
@@ -52,22 +54,24 @@
 		4358D9D44B7DBE433CDB7E7652BD51F8 /* Pods-PauContainer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PauContainer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		49D96F91D4817126BF21C733963897A7 /* Pods-PauContainer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PauContainer_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4BE6AD1058BCEA786310B2115FFCDAAA /* Pods-PauContainer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PauContainer_Example-frameworks.sh"; sourceTree = "<group>"; };
-		5FD279FD287F7C207ABB7A7C9C2FF5C5 /* Pods_PauContainer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PauContainer_Tests.framework; path = "Pods-PauContainer_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F1E32F3243480150026C390 /* DefinitionKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DefinitionKey.swift; path = PauContainer/Classes/DefinitionKey.swift; sourceTree = "<group>"; };
+		5F1E32FB243601580026C390 /* Definition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Definition.swift; path = PauContainer/Classes/Definition.swift; sourceTree = "<group>"; };
+		5FD279FD287F7C207ABB7A7C9C2FF5C5 /* Pods_PauContainer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PauContainer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		617DF37664DE8E3602F7061AB6239740 /* Pods-PauContainer_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PauContainer_Example-Info.plist"; sourceTree = "<group>"; };
 		6F816809D0609E5BEA3EF5C18EC777CB /* Pods-PauContainer_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PauContainer_Tests-umbrella.h"; sourceTree = "<group>"; };
-		84427B4B4C6EB338429ECE63352E6A46 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		84427B4B4C6EB338429ECE63352E6A46 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8512E3C56680AACA17F0C2F90518FE7B /* PauContainer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PauContainer-umbrella.h"; sourceTree = "<group>"; };
-		866682778656A9DA22BB3C514D053D41 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		866682778656A9DA22BB3C514D053D41 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9614D3F858ADFEA22B35AAFF4E58D552 /* Pods-PauContainer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PauContainer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9689DED332145E8BC36C54B1D3E0B20E /* PauContainer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PauContainer.xcconfig; sourceTree = "<group>"; };
 		9AF9258D30D77F05D21D59565CCB1A3D /* Pods-PauContainer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PauContainer_Example-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A7D138D61647375CF9404E6FCE3AD9F8 /* Pods-PauContainer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PauContainer_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		BE3BA197AFD799BDC69DB087847DBCD7 /* Pods_PauContainer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PauContainer_Example.framework; path = "Pods-PauContainer_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE3BA197AFD799BDC69DB087847DBCD7 /* Pods_PauContainer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PauContainer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0AE0F76538562F664EBE546CAAC2118 /* PauContainer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PauContainer.modulemap; sourceTree = "<group>"; };
-		C4698B98C08185CA1CB34F8EC40FE1D6 /* PauContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PauContainer.framework; path = PauContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4698B98C08185CA1CB34F8EC40FE1D6 /* PauContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PauContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7E4C11495DD15ECBE97B7E0D279323 /* Pods-PauContainer_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PauContainer_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		DA4728E91743D216ED0BF43D0C4AF57D /* PauContainer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PauContainer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DA4728E91743D216ED0BF43D0C4AF57D /* PauContainer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = PauContainer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F7A79576304FC5A49546800DDEFD444F /* Pods-PauContainer_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PauContainer_Example.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,7 +126,9 @@
 		26E3B8FB10EB27C27370787541CF6C0B /* PauContainer */ = {
 			isa = PBXGroup;
 			children = (
-				0331F7FF0980658D544013345680F84F /* ReplaceMe.swift */,
+				5F1E32FB243601580026C390 /* Definition.swift */,
+				5F1E32F3243480150026C390 /* DefinitionKey.swift */,
+				0331F7FF0980658D544013345680F84F /* PauContainer.swift */,
 				18D8D75F48FD4EC48DE8970BCC67AFE2 /* Pod */,
 				EBE8926A00521FC0BA65DE59A6B0DCEB /* Support Files */,
 			);
@@ -365,8 +371,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F1E32FC243601590026C390 /* Definition.swift in Sources */,
+				5F1E32F4243480150026C390 /* DefinitionKey.swift in Sources */,
 				7381EDDAD483A27622A3FF144DFE877B /* PauContainer-dummy.m in Sources */,
-				D2356736F99E160E1AA97EAF1F0C33B8 /* ReplaceMe.swift in Sources */,
+				D2356736F99E160E1AA97EAF1F0C33B8 /* PauContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,8 +595,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
