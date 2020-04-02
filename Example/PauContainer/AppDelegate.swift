@@ -7,6 +7,11 @@
 //
 
 import UIKit
+import PauContainer
+
+class Pau {
+    
+}
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +21,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // MARK: PauContainer Usage
+        // Call the initializer to create an empty container
+        let container = PauContainer()
+        // To store an element, first we need to create a Definition of it
+        let definition = Definition(element: Pau())
+        // Then we can register that object in the container
+        container.register(definition)
+        do {
+            let a = try container.resolve() as Pau
+            debugPrint(a)
+        } catch {
+            switch error {
+            case PauContainer.Errors.IncorrectType:
+                break
+            case PauContainer.Errors.NonStoredType:
+                break
+            default: break
+            }
+        }
         return true
     }
 
